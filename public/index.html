@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <title>LSUTV Live</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./lib/videojs/video-js.min.css" />
+
+        <style>
+            /* temporary */
+            a {
+                color: inherit;
+            }
+            a:hover{
+                color: inherit;
+            }
+            body{
+                background-color: #555;
+            }
+            .details{
+                margin-top: 20px;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-dark bg-dark navbar-fixed">
+            <a class="navbar-brand" href="#">
+              <img src="./res/lsutv_white.png" width="40" height="40" class="d-inline-block align-top" alt="">
+              <!-- <span>LSUTV Live</span> -->
+            </a> 
+            <ul class="nav text-light">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/">LSUTV Live</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="//media.lsu.co.uk">LSU Media</a>
+                </li>
+              </ul>
+          </nav>
+
+        <main class="container text-light">
+            <div class="spacer row" style="height:30px;"></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9" id="player-container">
+                            <!-- <iframe class="embed-responsive-item" src="http://radio.lsu.co.uk/liveplayer/" allowfullscreen></iframe> -->
+                        <video class="embed-responsive-item video-js" id="live-video" controls preload="auto" height="100%" widht="100%" data-setup="{}" poster="http://media.lsu.co.uk/wp-content/uploads/2017/10/ThumbnailSet.jpg">
+                            <!-- <source src="http://stream.lsu.co.uk/hls-live/liveevent/livestream.m3u8" type="application/x-mpegURL"/> -->
+                            <source src="https://webvids.lsu.co.uk/2017-18/LSUTV/CoffeeHouseSessions/FLAWES/SET_Web.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="details bg-dark">
+                        <h2 id="programtitle">Match Report</h2>
+                        <h5>Live from 7pm</h5>
+                        <p>
+                            In the first episode of the year, we watch some sports.<br />
+                            Having problems with the livestream? Visit the <a href="help.html">help page.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        
+        <!-- Include scripts here -->
+
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- Video.js -->
+        <script src="./lib/videojs/video.min.js"></script>
+
+        <!-- App Libraries -->
+        <script>
+        </script>
+    </body>
+</html>
