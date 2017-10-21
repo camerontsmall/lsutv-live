@@ -28,14 +28,14 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-dark bg-dark navbar-fixed">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="#">
               <img src="./res/lsutv_white.png" width="40" height="40" class="d-inline-block align-top" alt="">
               <!-- <span>LSUTV Live</span> -->
             </a> 
             <ul class="nav text-light">
                 <li class="nav-item">
-                  <a class="nav-link active" href="/">LSUTV Live</a>
+                  <a class="nav-link active">LSUTV Live</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/schedule.html">Schedule</a>
@@ -47,14 +47,15 @@
           </nav>
 
         <main class="container text-light">
-            <div class="spacer row" style="height:30px;"></div>
+            <div class="spacer row" style="height:100px;"></div>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="embed-responsive embed-responsive-16by9" id="player-container">
                             <!-- <iframe class="embed-responsive-item" src="http://radio.lsu.co.uk/liveplayer/" allowfullscreen></iframe> -->
                         <video class="embed-responsive-item video-js" id="live-video" controls preload="auto" height="100%" widht="100%" data-setup="{}" poster="http://media.lsu.co.uk/wp-content/uploads/2017/10/ThumbnailSet.jpg">
-                            <!-- <source src="http://stream.lsu.co.uk/hls-live/liveevent/livestream.m3u8" type="application/x-mpegURL"/> -->
-                            <source src="https://webvids.lsu.co.uk/2017-18/LSUTV/CoffeeHouseSessions/FLAWES/SET_Web.mp4" type="video/mp4">
+                            <source src="http://stream.lsu.co.uk/hls-live/liveevent/livestream.m3u8" type="application/x-mpegURL"/>
+                            <!-- <source src="https://webvids.lsu.co.uk/2017-18/LSUTV/CoffeeHouseSessions/FLAWES/SET_Web_Stereo.mp4" type="video/mp4"> -->
+                            <source src="rtmp://stream.lsu.co.uk/lsutv&live_1" type="rtmp/mp4">
                         </video>
                     </div>
                 </div> 
